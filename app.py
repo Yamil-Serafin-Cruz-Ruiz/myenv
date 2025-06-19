@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from joblib import load
 
 app = Flask(__name__)
-modelo = load('../bichos/modelobichos.pkl')
+modelo = load('../bichos/dataset/modelobichos15.pkl')
 
 @app.route('/')
 def home():
